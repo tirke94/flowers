@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="pozadina"></div>
+    <section>
+        <form method="get">
+
+            <h1>Odaberite cveće:</h1>
+            <div id="divCvece">
+                <div class="inputCvece">
+                    <input type="number" id="inputRuza" name="ruza" placeholder="Cena po cvetu je 150 din." value=""><a href="https://sr.m.wikipedia.org/wiki/%D0%A0%D1%83%D0%B6%D0%B0"><span class="test">&#127801</span></a><span class="inputText">  Ruže</span>
+                </div>
+                <div class="inputCvece">
+                    <input type="number" id="inputLjiljan" name="ljiljan" placeholder="Cena po cvetu je 120 din."
+                        value=""><a href="https://sr.wikipedia.org/wiki/Lilium"><span class="test">&#127799</span></a><span class="inputText">  Ljiljani</span>
+                </div>
+                <div class="inputCvece">
+                    <input type="number" id="inputGerber" name="gerber" placeholder="Cena po cvetu je 70 din." value=""><a href="https://sr.m.wikipedia.org/wiki/Gerber"><span class="test">&#127800</span></a><span class="inputText">  Gerberi</span>
+                </div>
+            </div>
+
+            <h1>Dodatni pokloni:</h1>
+            <div id="divPokloni">
+                <div class="pokloni">
+                    <input type="checkbox" name="pokloni" id="bobonjera" value="bombonjera"><span class="inputText">  Bombonjera</span>
+                </div>
+                <div class="pokloni">
+                    <input type="checkbox" name="pokloni" id="cokolada" value="cokolada"><span class="inputText">  Čokolada</span>
+                </div>
+                <div class="pokloni">
+                    <input type="checkbox" name="pokloni" id="sampanjac" value="sampanjac"><span class="inputText">  Šampanjac</span>
+                </div>
+            </div>
+
+            <h1>Plaćanje:</h1>
+            <div id="placanje">
+                <div class="placanje">
+                    <input type="radio" id="kes" name="placanje" value="kes" checked><span class="inputText">  Keš</span>
+                </div>
+                <div class="placanje">
+                    <input type="radio" id="kartica" name="placanje" value="kartica"><span class="inputText">  Kartica</span>
+                </div>
+            </div>
+
+            <div id="buttons">
+                <input type="button" id="izracunaj" name="izracunaj" value="Izračunaj">
+                <input type="reset" id="resetuj" name="izracunaj" value="Resetuj">
+            </div>
+
+        </form>
+        <h1>Vaša porudžbina:</h1>
+
+        <div id="ispis">
+            <!-- <div class="ispisRuza"></div>
+            <div class="ispisLjiljan"></div>
+            <div class="ispisGerber"></div>
+            <p class="plusBombonjera"></p>
+            <p class="plusCokolada"></p>
+            <p class="plusSampanjac"></p>
+            <p class="cena"></p> -->
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

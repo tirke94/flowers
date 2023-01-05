@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    /* position: relative; */
+}
+
+img {
+    width: 20px;
+}
+
+#pozadina {
+    position: fixed;
+    background-image: url('slike/download\ \(2\).jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -10;
+    opacity: 0.3;
+}
+
+section {
+    width: 50vw;
+    margin: auto;
+}
+
+h1 {
+    color: rgb(100, 2, 81);
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+#divCvece,
+#divPokloni,
+#placanje {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 10px;
+}
+
+.inputText {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.inputCvece input {
+    width: 300px;
+    padding: 5px 10px;
+}
+
+.inputCvece input:hover,
+.inputCvece input:focus {
+    background-color: black;
+    color: yellow;
+}
+
+.inputCvece input::-webkit-outer-spin-button,
+.inputCvece input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#buttons {
+    margin-top: 1rem;
+}
+
+#buttons input {
+    width: 80px;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+#buttons input:hover {
+    background-color: black;
+    color: yellow;
+    transform: scale(0.9);
+}
+
+.test {
+    margin-left: -30px;
+    padding: 5px;
+}
+
+.inputCvece a {
+    text-decoration: none;
+}
+
+/* ispis poruzbina */
+#ispis {
+    width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    row-gap: 10px; */
+}
+
+.ispisRuza img,
+.ispisLjiljan img,
+.ispisGerber img {
+    width: 50px;
+}
+
+.cena {
+    color: rgb(100, 2, 81);
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.ispisRuza,
+.ispisLjiljan,
+.ispisGerber,
+.plusBombonjera,
+.plusCokolada,
+.plusSampanjac {
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 770px) {
+    section {
+        width: 100vw;
+        text-align: center;
+    }
+
+    #divCvece,
+    #divPokloni,
+    #placanje {
+        width: fit-content;
+        margin-left: 150px;
+    }
+}
+@media only screen and (max-width: 550px){
+    #divCvece,
+    #divPokloni,
+    #placanje{
+        margin-left: 30px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .inputCvece input {
+        width: 150px;
+    }
+    h1, .cena{
+        font-size: 1.5rem;
+    }
+    .inputText {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
