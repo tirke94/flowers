@@ -34,6 +34,13 @@ let imgRuze = document.createElement('div')
 imgRuze.classList.add('ispisRuza')
 
 btnIzracunaj.addEventListener('click', () => {
+    imgRuze.innerHTML = ''
+    imgLjiljan.innerHTML = ''
+    imgGerber.innerHTML = ''
+    plusBombonjera.innerHTML = ''
+    plusCokolada.innerHTML = ''
+    plusSampanjac.innerHTML = ''
+    divIspis.textContent = ''
     suma = 0;
     dodatniPoklon = 0
     pokloni.forEach(poklon => {
